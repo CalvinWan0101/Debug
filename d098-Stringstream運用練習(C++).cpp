@@ -29,7 +29,7 @@ int main()
 				}
 			if (a.length() - 1 == end)
 			{
-				//½T»{¬O§_¥ş³¡³£¬O¼Æ¦r
+				//ç¢ºèªæ˜¯å¦å…¨éƒ¨éƒ½æ˜¯æ•¸å­—
 				for (int i = start; i <= end; i++)
 					if (array[i] > 9 || array[i] < 0)
 					{
