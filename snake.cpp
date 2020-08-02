@@ -81,7 +81,7 @@ void setdata()
 	 }
 	 if(snake_x[0]==0||snake_x[0]==high-1||snake_y[0]==0||snake_y[0]==width-1)  //碰墙了 
 	 {
-	 	cout<<"游戏结束！"<<endl;
+	 	cout<<！"<<endl;
 	 	getch();
 	 	exit(1);  
 		 	 }
