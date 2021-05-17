@@ -10,31 +10,31 @@ int main()
         for (int i = 0; i < strlen(input); i++)
         {
             if (buffer == input[i])
-                count++;
-            else if (i == (strlen(input) - 1))
             {
-                if (buffer == input[i])
+                if (i == (strlen(input) - 1))
                 {
                     count++;
                     printf("%c", buffer);
                     printf("%d", count);
-                    //printf("A");
                 }
-                else if (buffer != input[i])
-                {
-                    printf("%c", input[i]);
-                    printf("1");
-                    //printf("B");
-                }
+                else
+                    count++;
             }
             else
             {
-                printf("%c", buffer);
-                printf("%d", count);
-                printf(" ");
-                buffer = input[i];
-                count = 1;
-                //printf("C");
+                if (i == (strlen(input) - 1))
+                {
+                    printf("%c", input[strlen(input) - 1]);
+                    printf("1");
+                }
+                else
+                {
+                    printf("%c", buffer);
+                    printf("%d", count);
+                    printf(" ");
+                    buffer = input[i];
+                    count = 1;
+                }
             }
         }
     }
